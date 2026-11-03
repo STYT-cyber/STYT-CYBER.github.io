@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tai pavadinimas, kurį matai naršyklės kortelėje -->
+  <title>Mano svetainė</title>
+
+  <!-- Šriftas iš Google Fonts. Jei norėsi kito, pakeisk pavadinimą čia ir CSS dalyje -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Spalvos vienoje vietoje: pakeisk čia ir pasikeis visame puslapyje */
+    :root {
+      --fonas: #e9ecff;
+      --tekstas: #1e1b4b;
+      --akcentas: #ff5c8a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Bricolage Grotesque", Arial, sans-serif;
+      background: var(--fonas);
+      color: var(--tekstas);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 9vw, 4.5rem);
+      line-height: 1.05;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      margin-top: 3rem;
+      border-bottom: 4px solid var(--akcentas);
+      display: inline-block;
+    }
+
+    a { color: var(--tekstas); }
+    a:hover { color: var(--akcentas); }
+
+    /* Darbų kortelės */
+    .darbas {
+      background: white;
+      border-radius: 1rem;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .darbas h3 { margin: 0 0 0.25rem; }
+    .darbas p { margin: 0; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- 1. Apie mane: pakeisk tekstą savuoju -->
+    <h1>Labas, aš [tavo vardas]</h1>
+    <p>Esu kolegijos studentė. Mėgstu vizualius dalykus, o dabar mokausi kurti svetaines.</p>
+
+    <!-- 2. Darbai: kopijuok vieną bloką <div class="darbas">, kai turėsi daugiau -->
+    <h2>Mano darbai</h2>
+
+    <div class="darbas">
+      <h3>Savarankiškas darbas</h3>
+      <p>Toksiški tėvų ir suaugusių vaikų santykiai: rašto darbas ir pristatymas.</p>
+    </div>
+
+    <div class="darbas">
+      <h3>Ši svetainė</h3>
+      <p>Mano pirmasis projektas GitHub'e.</p>
+    </div>
+
+    <!-- 3. Kontaktai: įrašyk savo el. paštą -->
+    <h2>Kontaktai</h2>
+    <p><a href="mailto:tavo@pastas.lt">tavo@pastas.lt</a></p>
+  </main>
+</body>
+</html>
